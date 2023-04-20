@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4.5 Expansion Matrix</title>
+    <script type="x-shader/x-vertex" id="VertexShader">
+        attribute vec2 a_position; 
+        void main(void) {
+            gl_Position = vec4(a_position, 1.0);
+        }
+    </script>
+    <script type="x-shader/x-fragment" id="FragmentShader">
+        void main(void) {
+            gl_color = vec4(0.33725490196078434, 0.38823529411764707, 0.9686274509803922
+            );
+        }
+
+    </script>
+    <style>
+        canvas {
+        border: solid black 5px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" height ="700" width="400"></canvas>
+    <script src="main.js"></script>
+</body>
+</html>
